@@ -18,6 +18,9 @@
         android:theme="@style/Theme.HackathonApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".DataHelper"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="false" />
         <activity
@@ -25,7 +28,7 @@
             android:exported="false" />
         <activity
             android:name=".Skener"
-            android:exported="false"/>
+            android:exported="false" />
         <activity
             android:name=".SignUp"
             android:exported="false" />
