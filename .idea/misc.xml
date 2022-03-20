@@ -4,11 +4,15 @@
     <option name="filePathToZoomLevelMap">
       <map>
         <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_data_helper.xml" value="0.176" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_edu.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_kantina.xml" value="0.24547101449275363" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_main.xml" value="0.264" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_pravi_aktiviti.xml" value="0.24010416666666667" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_prva_slika.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_sign_up.xml" value="0.25416666666666665" />
         <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_skener.xml" value="0.25416666666666665" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_sos.xml" value="0.24547101449275363" />
+        <entry key="..\:/Users/admin/AndroidStudioProjects/hackathonapp/app/src/main/res/layout/activity_zaposleni.xml" value="0.24547101449275363" />
       </map>
     </option>
   </component>

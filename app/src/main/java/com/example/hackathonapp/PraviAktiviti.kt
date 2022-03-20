@@ -42,7 +42,37 @@ class PraviAktiviti : AppCompatActivity() {
         val username = preferences.getString("USERNAME", "")
         //textIme.text = username
 
+        val viewjedan = findViewById<View>(R.id.viewsos)
+        val viewdva = findViewById<View>(R.id.viewzaposleni)
+        val viewtri = findViewById<View>(R.id.brojsati)
+        val viewcetvrti= findViewById<View>(R.id.kantina)
+        val viewpet = findViewById<View>(R.id.viewedu)
 
+        viewjedan.setOnClickListener{
+            val intent = Intent(this, SosActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewdva.setOnClickListener{
+            val intent = Intent(this, ZaposleniActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewtri.setOnClickListener{
+            val intent = Intent(this, SatiActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewcetvrti.setOnClickListener{
+            val intent = Intent(this, KantinaActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+        viewpet.setOnClickListener{
+            val intent = Intent(this, EduActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
 
         /*if(dataHelper.timerCounting()){
             //startTimer()

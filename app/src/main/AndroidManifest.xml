@@ -18,6 +18,21 @@
         android:theme="@style/Theme.HackathonApp"
         android:usesCleartextTraffic="true">
         <activity
+            android:name=".EduActivity"
+            android:exported="false" />
+        <activity
+            android:name=".KantinaActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SatiActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ZaposleniActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SosActivity"
+            android:exported="false" />
+        <activity
             android:name=".DataHelper"
             android:exported="false" />
         <activity
