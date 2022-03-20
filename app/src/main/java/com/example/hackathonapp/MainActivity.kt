@@ -5,6 +5,15 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
 
+/*
+TODO LISTA
+NAPRAVIG FUNKCIONALAN LOGIN
+RIJESITI SISTEM BAZA
+NAPRAVITI SKENER ZA QR KOD
+KRENUTI SA KREIRANJEM GLAVNOG INTENTA (TAJMER, PAUZA, KANTINA,HELP EDUKACIJA....)
+ */
+
+
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
