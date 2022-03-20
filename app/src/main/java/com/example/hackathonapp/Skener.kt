@@ -1,6 +1,8 @@
 package com.example.hackathonapp
 
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -15,14 +17,16 @@ class Skener : AppCompatActivity() {
 
     val REQUEST_ID_MULTIPLE_PERMISSIONS = 7
 
+    lateinit var preferences: SharedPreferences
     private lateinit var codeScanner: CodeScanner
 
+    var SKENER = false
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_skener)
         val scannerView = findViewById<CodeScannerView>(R.id.scanner_view)
-
+        preferences = getSharedPreferences("SHARED_PREF", Context.MODE_PRIVATE)
         codeScanner = CodeScanner(this, scannerView)
 
         // Parameters (default values)
@@ -38,6 +42,10 @@ class Skener : AppCompatActivity() {
         codeScanner.decodeCallback = DecodeCallback {
             runOnUiThread {
                 if (it.text.toString() == "http://www.chek-me.ba"){
+                    SKENER = true
+                    val editor: SharedPreferences.Editor = preferences.edit()
+                    editor.putBoolean("SKENER", SKENER)
+                    editor.apply()
                     val intentt = Intent(this, PraviAktiviti::class.java )
                     startActivity(intentt)
                     finish()

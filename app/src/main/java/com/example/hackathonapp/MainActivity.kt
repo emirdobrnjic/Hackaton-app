@@ -1,7 +1,9 @@
 package com.example.hackathonapp
 
 import android.content.ContentValues.TAG
+import android.content.Context
 import android.content.Intent
+import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -29,9 +31,13 @@ KRENUTI SA KREIRANJEM GLAVNOG INTENTA (TAJMER, PAUZA, KANTINA,HELP EDUKACIJA....
 
 
 class MainActivity : AppCompatActivity() {
+    lateinit var sharedPreferences : SharedPreferences
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        sharedPreferences = getSharedPreferences("SHARED_PREF", Context.MODE_PRIVATE)
 
         val username_input = findViewById<EditText>(R.id.username_input)
         val password_input = findViewById<EditText>(R.id.password_input)
@@ -76,6 +82,10 @@ class MainActivity : AppCompatActivity() {
                             val jObj = JSONObject(result)
                             val error = jObj.getBoolean("error")
                             if (!error){
+                                val editor: SharedPreferences.Editor = sharedPreferences.edit()
+                                editor.putString("USERNAME", username_input.toString())
+                                editor.putString("PASSWORD", password_input.toString())
+                                editor.apply()
                                 val intent = Intent(this, Skener::class.java)
                                 /*intent.putExtra("username", username )
                                 intent.putExtra("password", password )*/

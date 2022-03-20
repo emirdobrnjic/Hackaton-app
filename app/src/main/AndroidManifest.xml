@@ -18,19 +18,19 @@
         android:theme="@style/Theme.HackathonApp"
         android:usesCleartextTraffic="true">
         <activity
-            android:name=".PrvaSlika"
+            android:name=".MainActivity"
             android:exported="false" />
         <activity
             android:name=".PraviAktiviti"
             android:exported="false" />
         <activity
             android:name=".Skener"
-            android:exported="false" />
+            android:exported="false"/>
         <activity
             android:name=".SignUp"
             android:exported="false" />
         <activity
-            android:name=".MainActivity"
+            android:name=".PrvaSlika"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
